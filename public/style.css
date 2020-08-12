@@ -1,0 +1,357 @@
+body{
+  background-color: white;
+  margin:0px !important;
+  padding:0px !important;
+  user-select: none;
+}
+
+#content_container{
+  background-color: #148F77;
+  width:80%;
+  margin: auto;
+  display:inline-block;
+  /* padding-bottom:50px; */
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position:absolute;
+  left:50%;
+  margin-top: 0px !important;
+  transform: translate(-50%, 5%);
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px 3px #A3E4D7;
+ 
+  
+}
+/* @media(max-width:768px)
+{
+#content_container{
+  width:80% !important;
+}
+} */
+
+#finish_task_header{
+  margin:auto;
+  background-color: #A3E4D7;
+  color:white;
+  width:90%;
+  height:50px;
+  font-size:40px;
+  font-family:'Times New Roman', Times, serif;
+  text-align:center;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+#task_input_container{
+  background-color:#fff;
+  margin:auto auto;
+  height:120px;
+  width:90%;
+  margin-bottom: 2.0px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  padding-bottom:10px;
+}
+
+#input_box{
+  /* margin-left: 16px; */
+  width:50%;
+  float:left;
+  height:50px;
+  background-color:#fff;
+  border:none;
+  border-bottom:2px solid #A3E4D7;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:15px;
+  border-right:0.2px solid #A3E4D7;
+  transition: 0.3s;
+  
+}
+
+#input_box:focus{
+  border-bottom:4px solid #148F77;
+  outline:none;
+}
+
+#input_date {
+  width:49%;
+  float:left;
+  height:52px;
+  background-color:#fff;
+  border:none;
+  border-bottom:2px solid #A3E4D7;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:15px;
+  padding: 0;
+  transition: 0.3s;
+ }
+
+ #input_date:focus{
+  border-bottom:4px solid #148F77;
+  outline:none;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  background: white; 
+  margin-left: 50px;
+}
+::-webkit-datetime-edit-text {
+  color: #A3E4D7; padding: 0 0.3em;
+}
+::-webkit-datetime-edit-month-field {
+  color: gray; font-family:'Times New Roman', Times, serif;
+}
+::-webkit-datetime-edit-day-field {
+  color: gray; font-family:'Times New Roman', Times, serif;
+}
+::-webkit-datetime-edit-year-field {
+  color: gray; font-family:'Times New Roman', Times, serif;
+}
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    color:#A3E4D7;
+    width: 15.5px;
+    height: 12.5px;
+}
+
+#input_button{
+  width:60%;
+  float:left;
+  margin-left:20%;
+  margin-top: 20px;
+  background-color: #A3E4D7;
+  height:40px;
+  color:white;
+  cursor:pointer;
+  outline:none;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #148F77;
+  border-radius: 5px;
+}
+
+#input_button:hover{
+  background-color: #A3E4D7;
+  color:white;
+}
+
+#input_button:active{
+  transform: translateY(4px);
+}
+
+.header{
+  float:left;
+  margin-left: 5%;
+  background-color: #A3E4D7;
+  color:white;
+  width:86.5%;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:20px;
+  padding-right:20px;
+  box-shadow: 0px 5px white;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom:10px;
+  
+}
+
+.container{
+  float:left;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  background-color:#A3E4D7;
+  width:90%;
+  height:150px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+.task_container{
+  background-color:#fff;
+  width: 90%;
+  height:50px;
+  margin:0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.task_container:hover{
+  box-shadow: -2px 2px #148F77;
+}
+
+#task_data{
+  display: inline-block !important;
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+#task_tool{
+  display: inline-block;
+  float: right;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#task_done_button{
+  float:right;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-color:#fff;
+  border:none;
+  border-radius:20px;
+  outline:none;
+  margin-right: 5px;
+}
+
+#task_done_button:hover{
+  background-color:#145A32;
+  color:white;
+}
+
+#task_done_button:active{
+  transform: translateY(4px);
+}
+
+#task_edit_button{
+  float:right;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-color:#fff;
+  border:none;
+  border-radius:20px;
+  outline:none;
+  margin-right: 5px;
+}
+
+#task_edit_button_editing{
+  float:right;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-color:#ffed83;
+  color: white;
+  border:none;
+  border-radius:20px;
+  outline:none;
+  margin-right: 5px;
+}
+#task_edit_button:hover{
+  background-color:#ffed83;
+  color:white;
+}
+#task_edit_button:active{
+  transform: translateY(4px);
+}
+
+#task_delete_button{
+  float:right;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-color:#fff;
+  border:none;
+  border-radius:20px;
+  outline:none;
+  margin-right: 5px;
+}
+
+#task_delete_button:hover{
+  background-color:#fa163f;
+  color:white;
+}
+
+#task_delete_button:active{
+  transform: translateY(4px);
+}
+
+#task_title{
+  background-color:#fff;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:15px;
+  margin-bottom:0px;
+  float: left;
+  width:100%;
+}
+
+#title_editing{
+  background-color:#fff;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:15px;
+  float: left;
+  width:100%;
+  border-bottom: 1px solid #ffed83;
+  outline: none;
+}
+
+#title_editing:focus{
+  border-bottom: 3px solid #ffed83;
+
+}
+
+#date_editing{
+  background-color:#fff;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:lighter;
+  font-size:12px;
+  float: left;
+  width:100%;
+  border-bottom: 1px solid #ffed83;
+  outline: none;
+}
+
+#date_editing:focus{
+  border-bottom: 3px solid #ffed83;
+
+}
+
+#task_date{
+  background-color:#fff;
+  font-family:'Times New Roman', Times, serif;
+  color:grey;
+  font-size:12px;
+  float: left;
+  margin: 0;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+   background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+
